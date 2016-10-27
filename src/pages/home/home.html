@@ -8,5 +8,16 @@
 </ion-header>
 
 <ion-content padding class="background">
-  <p> Hello it's up </p>
+  <img src="assets/logo.png" style="display: block;margin-top:30%;margin-left: auto;margin-right: auto;" /> 
+  <h2 style="color: #FFFFFF;" text-center> Discover </h2>
+  <h4 style="color: #FFFFFF;" text-center> your dream destination </h4>
+  
+  <div style="margin-top:20px;">
+    <ion-item>
+      <ion-input placeholder="Email Address" type="email" [(ngModel)]="email"></ion-input>
+    </ion-item> 
+    <ion-item>
+      <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </div>
 </ion-content>
