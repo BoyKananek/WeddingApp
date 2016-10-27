@@ -12,5 +12,11 @@ export class Home {
   constructor(public navCtrl: NavController) {
     
   }
+  login(){
+    //do login method
+  }
+  signup(){
+    //do signup method 
+  }
 
 }
