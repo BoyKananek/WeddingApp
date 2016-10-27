@@ -13,16 +13,16 @@
   <p style="color: #FFFFFF;" text-center> your dream destination </p>
   
   <div style="margin-top:20%;">
-    <ion-item>
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
       <ion-input placeholder="Email Address" type="email" [(ngModel)]="email"></ion-input>
     </ion-item> 
-    <ion-item>
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
       <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
   </div>
   <br><br>
   <button ion-button block color="danger" (click)="login()"> Login </button>
   <div text-center>
-  <p style="color:#ffffff;">have an account?<button ion-button clear (click)="signup()"> Sign up </button></p>
+  <p style="color:#ffffff;">have an account?<button ion-button clear small (click)="signup()"> Sign up </button></p>
   </div>
 </ion-content>
