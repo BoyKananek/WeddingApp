@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { SignUp } from '../signup/signup';
+import { ForgotPass } from '../forgotpass/forgotpass';
 
 @Component({
   selector: 'home-home',
@@ -17,6 +19,10 @@ export class Home {
   }
   signup(){
     //do signup method 
+    this.navCtrl.push(SignUp);
+  }
+  forgotPass(){
+    this.navCtrl.push(ForgotPass);
   }
 
 }
