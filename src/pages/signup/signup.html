@@ -1,9 +1,30 @@
 <ion-header no-shadow>
   <ion-navbar transparent>
-    <ion-title><p style="color:#ffffff;">Sign up</p></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="background">
-  
+  <h2 text-center style="margin-top:10%;color:#ffffff;"> Sign up </h2>
+  <div style="margin-top:20%">
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
+        <ion-input placeholder="User name" type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <br> 
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
+        <ion-input placeholder="Email Address" type="email" [(ngModel)]="email"></ion-input>
+    </ion-item> 
+    <br>
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
+        <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item> 
+    <br>
+    <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
+        <ion-input placeholder="Confirm Password" type="password" [(ngModel)]="repassword"></ion-input>
+    </ion-item> 
+  </div>
+  <br><br>
+  <div style="margin-top:10%;">
+    <button ion-button block color="danger" (click)="signup()"> Sign up </button>
+    <p style="color:#fff;"> Already have an accound? <a (click)="backhome()"> <u><b> Sign in </b></u></a></p>
+  </div>
 </ion-content>

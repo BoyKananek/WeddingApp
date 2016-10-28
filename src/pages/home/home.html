@@ -16,14 +16,15 @@
     <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
       <ion-input placeholder="Email Address" type="email" [(ngModel)]="email"></ion-input>
     </ion-item> 
+    <br>
     <ion-item style="border-color: rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0);color: #ffffff; " >
       <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
   </div>
   <br><br>
   <button ion-button block color="danger" (click)="login()"> Login </button>
-  <div>
+
   <p style="color:#ffffff;">have an account? <a style="color:#ffffff;" (click)="signup()"><u><b> Sign up</b></u></a> </p>
-  </div>
+
   <p style="color:#ffffff;">Forgot your password? <a style="color:#ffffff;" (click)="forgotPass()"><u><b> Reset password</b></u></a></p>
 </ion-content>
