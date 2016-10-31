@@ -22,7 +22,7 @@ export class ForgotPass {
         this.disableSubmit = true;
         if (!this.email){
             var alert = this.alertCtrl.create({
-            title: "Sign up fail",
+            title: "Request fail",
             subTitle: "Please enter your email",
             buttons: ["close"]
             });
@@ -31,7 +31,7 @@ export class ForgotPass {
         }
         else if (!this.validateEmail(this.email)){
             var alert = this.alertCtrl.create({
-            title: "Sign up fail",
+            title: "Request fail",
             subTitle: "Please enter your email in email format",
             buttons: ["close"]
             });
