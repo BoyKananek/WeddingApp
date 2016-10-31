@@ -10,7 +10,7 @@ import 'rxjs/Rx';
 })
 export class ForgotPass {
   email : any;
-  private disableSubmit: boolean = false;
+  disableSubmit: boolean = false;
   constructor(public navCtrl: NavController,private http: Http,public alertCtrl: AlertController,public loadingCtrl: LoadingController) {
     
   }

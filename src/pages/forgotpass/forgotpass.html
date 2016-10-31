@@ -12,5 +12,5 @@
         <ion-input placeholder="Email Address" type="email" [(ngModel)]="email"></ion-input>
   </ion-item> 
   <br><br>
-  <button ion-button block color="danger" (click)="requestToresetPass()"> Submit </button>
+  <button ion-button block [disabled]="disableSubmit" color="danger" (click)="requestToresetPass()"> Submit </button>
 </ion-content>
