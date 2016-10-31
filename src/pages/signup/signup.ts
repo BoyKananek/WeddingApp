@@ -12,7 +12,7 @@ export class SignUp {
   email : any;
   password : any;
   repassword : any;
-  private disableSubmit :boolean = false;
+  disableSubmit :boolean = false;
   constructor(public navCtrl: NavController,private http: Http,public alertCtrl: AlertController,public loadingCtrl: LoadingController) {
     
   }

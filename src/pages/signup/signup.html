@@ -24,7 +24,7 @@
   </div>
   <br><br>
   <div style="margin-top:10%;">
-    <button ion-button block color="danger" (click)="signup()"> Sign up </button>
+    <button ion-button block color="danger" [disabled]="disableSubmit" (click)="signup()"> Sign up </button>
     <p style="color:#fff;"> Already have an account? <a (click)="backhome()"> <u><b> Sign in </b></u></a></p>
   </div>
 </ion-content>
